@@ -34,10 +34,10 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.length >140 ? tweet[0..140] : tweet
+  tweet.length >140 ? tweet[0..139] : tweet
 end
 
 def shortened_tweet_truncator(tweet)
   shortened = word_substituter(tweet)
-  shortened.length >140 ? tweet[0..140] : tweet
+  shortened.length >10 ? tweet[0..139] : tweet
 end
