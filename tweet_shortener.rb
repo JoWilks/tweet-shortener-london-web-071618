@@ -16,6 +16,13 @@ end
 def word_substituter(string)
   
   string_array=string.split(" ")
-  
-  
+    dictionary.each { |long, short| 
+      string_array.each_with_index { |word, index| 
+        if word == long 
+          #puts "opportunity to shorten #{word} to #{short}"
+          string_array[index]=short
+        end
+        }
+     }
+  string_array.join(" ")
 end
