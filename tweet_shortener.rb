@@ -15,7 +15,7 @@ end
 
 def word_substituter(string)
   
-  string.split(" ")
+  string_array=string.split(" ")
   
   
 end
